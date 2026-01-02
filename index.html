@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DzBigbuy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">DzBigbuy</a>
+            <nav class="navigation">
+                <a href="/#trader-ads">إعلانات التجار</a>
+                <a href="/#marketer-ads">إعلانات المسوقين</a>
+                <div id="auth-container">
+                    <!-- This will be populated by script.js -->
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>منصة الوساطة الرائدة بين التجار والمسوقين</h1>
+            <p>سجل، انشر إعلانك، ودع المسوقين يجلبون لك العملاء</p>
+            <div id="post-ad-cta-container" class="post-ad-cta">
+                <!-- "Post Ad" button will be injected here by script.js for logged-in users -->
+            </div>
+        </section>
+
+        <section id="trader-ads" class="ads-section">
+            <h2 class="section-title">أحدث إعلانات التجار</h2>
+            <div id="trader-ads-container" class="ads-grid">
+                <!-- Skeleton Loader Cards -->
+                <div class="ad-card-skeleton">
+                    <div class="skeleton-image"></div>
+                    <div class="skeleton-text"></div>
+                    <div class="skeleton-text short"></div>
+                    <div class="skeleton-footer"></div>
+                </div>
+                <div class="ad-card-skeleton">
+                    <div class="skeleton-image"></div>
+                    <div class="skeleton-text"></div>
+                    <div class="skeleton-text short"></div>
+                    <div class="skeleton-footer"></div>
+                </div>
+                 <div class="ad-card-skeleton">
+                    <div class="skeleton-image"></div>
+                    <div class="skeleton-text"></div>
+                    <div class="skeleton-text short"></div>
+                    <div class="skeleton-footer"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="marketer-ads" class="ads-section">
+            <h2 class="section-title">أحدث إعلانات المسوقين</h2>
+            <div id="marketer-ads-container" class="ads-grid">
+                 <!-- Skeleton Loader Cards -->
+                <div class="ad-card-skeleton">
+                    <div class="skeleton-image"></div>
+                    <div class="skeleton-text"></div>
+                    <div class="skeleton-text short"></div>
+                    <div class="skeleton-footer"></div>
+                </div>
+                <div class="ad-card-skeleton">
+                    <div class="skeleton-image"></div>
+                    <div class="skeleton-text"></div>
+                    <div class="skeleton-text short"></div>
+                    <div class="skeleton-footer"></div>
+                </div>
+                 <div class="ad-card-skeleton">
+                    <div class="skeleton-image"></div>
+                    <div class="skeleton-text"></div>
+                    <div class="skeleton-text short"></div>
+                    <div class="skeleton-footer"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 DzBigbuy. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
